@@ -1,7 +1,10 @@
 import random
+start=input ('please define start number:')
+end=input('please define ending number:')
+start=int (start)
+end=int(end)
 
-
-n = random.randint(1,100)
+n = random.randint(start,end)
 count=0
 while True:
 	count += 1
@@ -9,6 +12,7 @@ while True:
 	
 	if int(x) == n:
 		print('Good guess!')
+		print('It is the',count,'times you guessed!')
 		break
 	elif int(x) > n:
 		print('Guess smaller number')
