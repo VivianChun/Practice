@@ -1,14 +1,11 @@
 password='a123456'
 i=2
-while True:
+while i>0:
     
     x= input ('please enter your password:')
-    if x =='a123456':
+    if x ==password:
         print ('login successful')
         break
-    elif i == 0:
-        print ('login failure')
-        break
     else:
-        print (i,'times left')
+        print ('fail',i,'times left')
     i=i-1
